@@ -1,0 +1,121 @@
+object Form1: TForm1
+  Left = 240
+  Height = 420
+  Top = 151
+  Width = 360
+  Caption = 'ExecutiveDysfunctionHelper: Decider'
+  ClientHeight = 420
+  ClientWidth = 360
+  Constraints.MinWidth = 220
+  LCLVersion = '1.6.0.4'
+  object chooseitem: TButton
+    Left = 117
+    Height = 25
+    Top = 384
+    Width = 139
+    Anchors = [akLeft, akRight, akBottom]
+    Caption = 'choose for me!'
+    OnClick = chooseitemClick
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 17
+    Top = 360
+    Width = 200
+    Alignment = taCenter
+    Anchors = [akLeft, akRight, akBottom]
+    Caption = '                        '
+    Constraints.MaxHeight = 50
+    Constraints.MinHeight = 10
+    Constraints.MinWidth = 200
+    ParentColor = False
+    WordWrap = True
+    OnClick = Label1Click
+  end
+  object Button2: TButton
+    Left = 16
+    Height = 25
+    Top = 384
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    Caption = 'Load list'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object ListBox1: TListBox
+    Left = 16
+    Height = 260
+    Top = 40
+    Width = 328
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    ItemHeight = 0
+    OnClick = ListBox1Click
+    ScrollWidth = 326
+    TabOrder = 2
+    TopIndex = -1
+  end
+  object savebutton: TButton
+    Left = 280
+    Height = 25
+    Top = 384
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Caption = 'Save file'
+    OnClick = savebuttonClick
+    TabOrder = 3
+  end
+  object newitemedit: TEdit
+    Left = 16
+    Height = 27
+    Top = 8
+    Width = 216
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 4
+  end
+  object additem: TButton
+    Left = 248
+    Height = 25
+    Top = 8
+    Width = 40
+    Anchors = [akTop, akRight]
+    Caption = 'add'
+    OnClick = additemClick
+    TabOrder = 5
+  end
+  object edititem: TButton
+    Left = 206
+    Height = 25
+    Top = 308
+    Width = 138
+    Anchors = [akRight, akBottom]
+    Caption = 'edit/delete'
+    OnClick = edititemClick
+    TabOrder = 6
+  end
+  object clear: TButton
+    Left = 301
+    Height = 25
+    Top = 8
+    Width = 43
+    Anchors = [akTop, akRight]
+    Caption = 'clear'
+    OnClick = clearClick
+    TabOrder = 7
+  end
+  object clearlist1: TButton
+    Left = 16
+    Height = 25
+    Top = 308
+    Width = 152
+    Anchors = [akLeft, akBottom]
+    Caption = 'Clear List'
+    OnClick = clearlist1Click
+    TabOrder = 8
+  end
+  object OpenDialog1: TOpenDialog
+  end
+  object SaveDialog1: TSaveDialog
+    left = 32
+  end
+end
